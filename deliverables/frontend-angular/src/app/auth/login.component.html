@@ -1,0 +1,36 @@
+<div class="login-viewport">
+  <div class="glass-card">
+    <div class="brand-lockup">
+      <i class="fa-solid fa-plane-departure"></i>
+      <h1>SkyGrid Operations</h1>
+      <p>Flight Availability Portal</p>
+    </div>
+
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" novalidate>
+      <div class="field">
+        <label for="username">Username</label>
+        <input id="username" type="text" formControlName="username" placeholder="Enter username" />
+        @if (loginForm.controls.username.touched && loginForm.controls.username.invalid) {
+          <span class="field-error">Username is required</span>
+        }
+      </div>
+
+      <div class="field">
+        <label for="password">Password</label>
+        <input id="password" type="password" formControlName="password" placeholder="Enter password" />
+        @if (loginForm.controls.password.touched && loginForm.controls.password.invalid) {
+          <span class="field-error">Password is required (min 4 chars)</span>
+        }
+      </div>
+
+      @if (errorMessage()) {
+        <div class="alert-error">{{ errorMessage() }}</div>
+      }
+
+      <button type="submit" [disabled]="loading()">
+        <i class="fa-solid fa-right-to-bracket"></i>
+        {{ loading() ? 'Signing in...' : 'Sign In' }}
+      </button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+[
+  {
+    "username": "dispatcher",
+    "password": "{bcrypt}$2a$10$7EqJtq98hPqEX7fNZaFWoOhi5L3nQfW2F8wP2J5zK8U8W2Q3vX5yK",
+    "fullName": "Arjun Mehta",
+    "role": "ROLE_DISPATCHER"
+  },
+  {
+    "username": "ops.manager",
+    "password": "{bcrypt}$2a$10$9kLmPqR1sTuVwXyZaBcDeOfGhIjKlMnOpQrStUvWxYz0123456789",
+    "fullName": "Priya Nair",
+    "role": "ROLE_OPERATIONS"
+  }
+]

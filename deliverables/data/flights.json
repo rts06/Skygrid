@@ -1,0 +1,56 @@
+[
+  {
+    "flightNumber": "AI101",
+    "origin": "Chennai",
+    "destination": "Mumbai",
+    "departureTime": "08:00",
+    "arrivalTime": "10:15",
+    "availableSeats": 56,
+    "status": "Available"
+  },
+  {
+    "flightNumber": "AI205",
+    "origin": "Delhi",
+    "destination": "Bangalore",
+    "departureTime": "09:30",
+    "arrivalTime": "12:10",
+    "availableSeats": 22,
+    "status": "Available"
+  },
+  {
+    "flightNumber": "AI312",
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "departureTime": "11:15",
+    "arrivalTime": "13:30",
+    "availableSeats": 14,
+    "status": "Available"
+  },
+  {
+    "flightNumber": "AI408",
+    "origin": "Bangalore",
+    "destination": "Hyderabad",
+    "departureTime": "12:45",
+    "arrivalTime": "14:05",
+    "availableSeats": 38,
+    "status": "Available"
+  },
+  {
+    "flightNumber": "AI519",
+    "origin": "Chennai",
+    "destination": "Kolkata",
+    "departureTime": "14:20",
+    "arrivalTime": "16:50",
+    "availableSeats": 9,
+    "status": "Available"
+  },
+  {
+    "flightNumber": "AI950",
+    "origin": "Delhi",
+    "destination": "Mumbai",
+    "departureTime": "06:15",
+    "arrivalTime": "08:25",
+    "availableSeats": 0,
+    "status": "Full"
+  }
+]

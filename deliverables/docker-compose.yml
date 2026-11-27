@@ -1,0 +1,75 @@
+version: "3.9"
+
+services:
+  auth-service:
+    build:
+      context: ./airline-platform
+      dockerfile: auth-service/Dockerfile
+    container_name: skygrid-auth-service
+    environment:
+      - SERVER_PORT=8081
+      - JWT_SECRET=${JWT_SECRET}
+      - USERS_DATA_PATH=/app/data/users.json
+    volumes:
+      - ./data/users.json:/app/data/users.json:ro
+    networks:
+      - skygrid-net
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8081/actuator/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+
+  flight-service:
+    build:
+      context: ./airline-platform
+      dockerfile: flight-service/Dockerfile
+    container_name: skygrid-flight-service
+    environment:
+      - SERVER_PORT=8082
+      - FLIGHTS_DATA_PATH=/app/data/flights.json
+    volumes:
+      - ./data/flights.json:/app/data/flights.json:ro
+    networks:
+      - skygrid-net
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8082/actuator/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+
+  gateway-service:
+    build:
+      context: ./airline-platform
+      dockerfile: gateway-service/Dockerfile
+    container_name: skygrid-gateway-service
+    ports:
+      - "8080:8080"
+    environment:
+      - SERVER_PORT=8080
+      - JWT_SECRET=${JWT_SECRET}
+      - AUTH_SERVICE_URL=http://auth-service:8081
+      - FLIGHT_SERVICE_URL=http://flight-service:8082
+    depends_on:
+      auth-service:
+        condition: service_healthy
+      flight-service:
+        condition: service_healthy
+    networks:
+      - skygrid-net
+
+  angular-frontend:
+    build:
+      context: ./frontend-angular
+      dockerfile: Dockerfile
+    container_name: skygrid-angular-frontend
+    ports:
+      - "4200:80"
+    depends_on:
+      - gateway-service
+    networks:
+      - skygrid-net
+
+networks:
+  skygrid-net:
+    driver: bridge

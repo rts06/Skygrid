@@ -1,0 +1,21 @@
+<header class="portal-header">
+  <div class="brand">
+    <i class="fa-solid fa-plane"></i>
+    <span>SkyGrid Airways</span>
+  </div>
+  <div class="user-actions">
+    <span class="user-name">
+      <i class="fa-regular fa-user"></i>
+      {{ user()?.fullName || user()?.username }}
+    </span>
+    <button type="button" class="logout-btn" (click)="logout()">
+      <i class="fa-solid fa-right-from-bracket"></i>
+      Logout
+    </button>
+  </div>
+</header>
+
+<main class="portal-main">
+  <h2>Available Flights</h2>
+  <app-flight-availability />
+</main>

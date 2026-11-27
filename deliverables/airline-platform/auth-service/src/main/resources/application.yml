@@ -1,0 +1,13 @@
+server:
+  port: 8081
+
+jwt:
+  secret: ${JWT_SECRET}
+
+users:
+  data:
+    path: ${USERS_DATA_PATH:/app/data/users.json}
+
+spring:
+  application:
+    name: auth-service

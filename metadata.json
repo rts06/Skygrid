@@ -1,0 +1,6 @@
+{
+  "name": "SkyGrid Flight Portal",
+  "description": "Minimal Airline Flight Availability Portal with JWT authentication, JSON-backed repository architecture, and Angular + Spring Boot microservices deliverables.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

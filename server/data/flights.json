@@ -1,0 +1,101 @@
+[
+  {
+    "flightNumber": "AI101",
+    "origin": "Chennai",
+    "destination": "Mumbai",
+    "departureTime": "08:00",
+    "arrivalTime": "10:15",
+    "availableSeats": 56,
+    "status": "Available"
+  },
+  {
+    "flightNumber": "AI205",
+    "origin": "Delhi",
+    "destination": "Bangalore",
+    "departureTime": "09:30",
+    "arrivalTime": "12:10",
+    "availableSeats": 22,
+    "status": "Available"
+  },
+  {
+    "flightNumber": "AI312",
+    "origin": "Mumbai",
+    "destination": "Delhi",
+    "departureTime": "11:15",
+    "arrivalTime": "13:30",
+    "availableSeats": 14,
+    "status": "Available"
+  },
+  {
+    "flightNumber": "AI408",
+    "origin": "Bangalore",
+    "destination": "Hyderabad",
+    "departureTime": "12:45",
+    "arrivalTime": "14:05",
+    "availableSeats": 38,
+    "status": "Available"
+  },
+  {
+    "flightNumber": "AI519",
+    "origin": "Chennai",
+    "destination": "Kolkata",
+    "departureTime": "14:20",
+    "arrivalTime": "16:50",
+    "availableSeats": 9,
+    "status": "Available"
+  },
+  {
+    "flightNumber": "AI624",
+    "origin": "Hyderabad",
+    "destination": "Mumbai",
+    "departureTime": "16:00",
+    "arrivalTime": "17:35",
+    "availableSeats": 44,
+    "status": "Available"
+  },
+  {
+    "flightNumber": "AI710",
+    "origin": "Delhi",
+    "destination": "Chennai",
+    "departureTime": "17:40",
+    "arrivalTime": "20:25",
+    "availableSeats": 31,
+    "status": "Available"
+  },
+  {
+    "flightNumber": "AI833",
+    "origin": "Kolkata",
+    "destination": "Bangalore",
+    "departureTime": "19:10",
+    "arrivalTime": "21:55",
+    "availableSeats": 18,
+    "status": "Available"
+  },
+  {
+    "flightNumber": "AI902",
+    "origin": "Mumbai",
+    "destination": "Bangalore",
+    "departureTime": "20:30",
+    "arrivalTime": "22:15",
+    "availableSeats": 64,
+    "status": "Available"
+  },
+  {
+    "flightNumber": "AI950",
+    "origin": "Delhi",
+    "destination": "Mumbai",
+    "departureTime": "06:15",
+    "arrivalTime": "08:25",
+    "availableSeats": 0,
+    "status": "Full"
+  },
+  {
+    "flightNumber": "AI998",
+    "origin": "Chennai",
+    "destination": "Delhi",
+    "departureTime": "21:45",
+    "arrivalTime": "00:35",
+    "availableSeats": 0,
+    "status": "Cancelled"
+  }
+]

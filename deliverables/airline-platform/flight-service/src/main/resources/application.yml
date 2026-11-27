@@ -1,0 +1,14 @@
+server:
+  port: 8082
+
+flight:
+  storage:
+    mode: file
+
+flights:
+  data:
+    path: ${FLIGHTS_DATA_PATH:/app/data/flights.json}
+
+spring:
+  application:
+    name: flight-service

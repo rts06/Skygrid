@@ -1,0 +1,19 @@
+.login-viewport {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #091a32 0%, #143b6e 100%);
+}
+
+.glass-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 2.25rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  color: #ffffff;
+}

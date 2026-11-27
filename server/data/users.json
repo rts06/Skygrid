@@ -1,0 +1,14 @@
+[
+  {
+    "username": "dispatcher",
+    "passwordHash": "182d1342acda173402c058c321c830fa:c51a207193eb94f4c516d6419e5e3d788deafaa456f3612ef9a8787cdcbb0d4826bf168518556ebaf5fc2e352f84655d3781705ae51e1019a8059c462b291dae",
+    "fullName": "Arjun Mehta",
+    "role": "FLIGHT_DISPATCHER"
+  },
+  {
+    "username": "ops.manager",
+    "passwordHash": "b9dee62866108dca0b73149f2a49bb6e:25c636e9e1c4d194f795c4836c1a4626c2ab2f5cf941b93ce053765830128b0198938ab12030c0aa87606db44b89a2193f9f90ac8f3b662bb16d6f4b8f6cad5c",
+    "fullName": "Priya Nair",
+    "role": "OPERATIONS_LEAD"
+  }
+]
